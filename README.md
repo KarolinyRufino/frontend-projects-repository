@@ -42,8 +42,6 @@ Algumas das tecnologias atualmente utilizadas são:
 <br>
 
 ## Conecte-se
-Bora se conectar, trocar ideias e se ajudar!
-<br><br>
 <span>
     <a href="https://www.linkedin.com/in/this-is-karoliny/">
         <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
@@ -51,7 +49,7 @@ Bora se conectar, trocar ideias e se ajudar!
 </span>
 
 ## Licença
-
-<br>
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+<br><br>
 
 <p align="center"> Feito com 💜 por Karoliny Rufino</p>
