@@ -1,0 +1,92 @@
+<!-- Desafio 04 da comunidade CodeLab -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    
+    <main>
+        <section class="section-img">
+            <img src="assets/img/innovation-amico.svg" alt="imagem sobre tecnologia e inovação">
+        </section>
+
+        <section class="section-form" >
+            <form action="" id="login-form" class="active">
+                <div class="title-form">
+                    <p>Bem-vindo de volta</p>
+                    <h1>Faça login na sua conta</h1>
+                </div>
+
+                <div class="form-container">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="" id="email-login" placeholder="exemplo@gmail.com" required>
+    
+                    <label for="password">Senha</label>
+                    <input type="password" name="" id="password-login" placeholder="@123456ab" required>
+    
+                    <div class="remember-container">
+                        <div class="remember">
+                            <input type="checkbox" name="" id="">
+                            <span>Lembrar minha senha</span>
+                        </div>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+    
+                    <input type="button" value="Entrar na conta">
+                    <button class="btn-google">
+                        <img src="assets/img/google-icon.svg" alt="icone do google">
+                        <span>Ou faça login com o Google</span>
+                    </button>
+                </div>
+
+
+                <div class="register">
+                    <span>Não tem conta?</span>
+                    <span>
+                        <a href="#" id="show-signup">Criar conta</a>
+                    </span>
+                </div>
+
+            </form>
+
+            <!-- O formulário de inscrição ficará oculto inicialmente -->
+            <form action="" id="signup-form">
+                <div class="title-form">
+                    <p>Seja bem-vindo</p>
+                    <h1>Crie sua conta</h1>
+                </div>
+
+                <div class="form-container">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="" id="email-register" placeholder="exemplo@gmail.com" required>
+    
+                    <label for="password">Senha</label>
+                    <input type="password" name="" id="password-register" placeholder="@123456ab" required>
+    
+                    <input type="button" value="Criar conta">
+                    <button class="btn-google">
+                        <img src="assets/img/google-icon.svg" alt="icone do google">
+                        <span>Ou entre com o Google</span>
+                    </button>
+                </div>
+
+                <div class="register">
+                    <span>Ja possui uma conta?</span>
+                    <span>
+                        <a href="#" id="show-login">Login</a>
+                    </span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --brand-color: #1e9e6a;
+    --dark-10: #1a202c;
+    --dark-20: #656769;
+    --dark-30: #e8e8e8;
+    --dark-40: #f7fafc;
+    --dark-50: #ffffff;
+}
+
+body {
+    height: 100vh;
+    font-family: "Archivo", sans-serif;
+}
+
+main {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-img, .section-form {
+    margin: auto;
+}
+.section-img{
+    width: 400px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    margin-bottom: 1rem ;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+.remember-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember {
+    display: flex;
+    gap: .5rem;
+}
+
+.remember-container a, .register a {
+    color: var(--brand-color);
+}
+
+.btn-google, input[type="button"] {
+    padding: 14px 32px;
+    border: none;
+    color: var(--dark-40);
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: var(--brand-color);
+}
+.btn-google {
+    background-color: var(--dark-10);
+}
+
+.btn-google img {
+    width: 20px;
+    padding-right: .5rem ;
+}
+
+.register {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+@media (max-width: 1024px) {
+    .section-img {
+       display: none;
+    }
+
+    .section-form {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    form.active {
+        width: 700px;
+    }
+}
+
+@media (max-width: 550px) {
+    form.active {
+        width: 300px;
+    }
+
+    .remember-container {
+        flex-direction: column;
+        margin-bottom: .8rem;
+    }
+}
